@@ -1,0 +1,30 @@
+atb_homepage:
+    path:     /
+    defaults: { _controller: ATBBundle:Default:index }
+
+accueil:
+    path:     /accueil
+    defaults: { _controller: ATBBundle:Accueil:index }
+
+
+compte:
+    path:     /compte
+    defaults: { _controller: ATBBundle:Compte:index }
+
+
+detail:
+    path:     /detail
+    defaults: { _controller: ATBBundle:Detail:index }
+
+historique:
+    path:     /historique
+    defaults: { _controller: ATBBundle:Historique:index }
+
+afficherCompte:
+    path:     /afficherCompte
+    defaults: { _controller: ATBBundle:Compte:afficherCompte }
+
+
+afficherAccueil:
+    path:     /afficherAccueil
+    defaults: { _controller: ATBBundle:Accueil:afficherAccueil }

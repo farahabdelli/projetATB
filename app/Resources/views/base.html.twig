@@ -1,0 +1,160 @@
+
+
+
+<html style="height: 100%;">
+
+<link rel="stylesheet" href="{{ asset('css/main.css') }}">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('css/main.css') }}">
+<head>
+
+    <title>Arab Tunisian Bank - </title> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <style>
+        BODY {
+            FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+            FONT-SIZE: 11px;
+            MARGIN: 0px auto;
+            min-height: 440px;
+        }
+        .copyrightContainer {
+            background-color: #0d5292;
+            margin: 0;
+            height: 20px;
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+
+        .copyrightText {
+            color: #E2E3E2;
+            font-size: 10px;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        .copyrightText a:link , a:visited , a:hover , a:active {
+            color: #E2E3E2;
+        }
+
+        a.default:link , a.default:visited , a.default:hover , a.default:active{
+            color: #0066cc;
+        }
+
+        .headerContainer {
+            background-image: url(https://www.atbnet.tn/cb/web/css/mass/images/bg_header.png);
+            position: relative;
+            padding: 0;
+            height: 80px;
+            background-position: left top;
+            background-repeat: repeat;
+        }
+
+        .logoDivCss {
+            float: right;
+            position: relative;
+            padding: 1em;
+            height: 80px;
+        }
+
+        .align_left {
+            text-align: left;
+        }
+
+        .float_left {
+            float: left;
+        }
+
+        .align_right {
+            text-align: right;
+        }
+
+        .paddingsides {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .mainfont {
+            PADDING-LEFT: 3px;
+            FONT-SIZE: 11px;
+            LINE-HEIGHT: 11px;
+            font-style: normal;
+            font-weight: 400;
+            color: #000000;
+        }
+
+        .headerfont {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 16px;
+            COLOR: #0d5292;
+            text-align:left;
+            FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif }
+
+        .btn {
+            CURSOR: pointer; COLOR: #0452a2;
+            border: 2px solid #d4d4d4;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div style="display:none;"><supportid>&lt;%TS.request.ID()%&gt;</supportid></div>
+
+<div style="height: 79px;">
+    <div class="headerContainer">
+  <span class="logoDivCss">
+   <img alt="Arabi Online" src="https://www.atbnet.tn/cb/web/css/mass/images/img_logo.png">
+  </span>
+    </div>
+</div>
+
+
+
+<div class="Header" style="margin-left: 18%; margin-right:15%; margin-top:2%; margin-bottom:2%; ">
+    <p class="headerfont" style="color:#798081"></p>
+    <hr style="background:#798081; border:0; height:2px;"> </div>
+
+
+<div class="mainfont" style="margin-left: 10%; margin-right:10%; margin-top:2%; margin-bottom:2%;">
+    {% block content %}{% endblock %}
+
+    <br>
+
+</div>
+
+
+<div class="button" style="margin-left: 15%; margin-right:15%; margin-top:2%; margin-bottom:2%;" align="center">
+    <!-- <a href='#' onclick='javascript:window.location.href = "/cb/pages/jsp-ns/no-authenticate.jsp"'>Back</a>-->
+
+</div>
+<br>
+
+<div class="contentFoot" style="margin-left: 15%; margin-right:15%; margin-top:2%; margin-bottom:2%;">
+
+
+
+    <br>
+</div>
+
+<div style="height: 15px;position:fixed;
+    bottom:0;width:100%">
+
+    <div class="copyrightContainer">
+        <div class="align_left float_left">
+    <span class="copyrightText">
+     Copyright © 2016 Arab Bank All Rights Reserved
+    </span>
+        </div>
+
+        <div class="align_right">
+    <span class="copyrightText" style="margin-right:15px">
+     <a class="copyrightText" href="https://www.arabi-online.com/cb/pages/jsp-ns/terms-and-conditions-login.jsp">Arabi Online Terms &amp; Conditions</a>
+    </span>
+        </div>
+    </div>
+</div>
+
+
+
+</body></html>

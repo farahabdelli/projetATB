@@ -1,0 +1,4 @@
+services:
+#    atb.example:
+#        class: ATBBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
