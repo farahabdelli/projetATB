@@ -1,5 +1,74 @@
 {% extends 'base3.html.twig' %}
 {% block content %}
-<br><br>
+    <br><br>
+    
+    <center><h3 style="color: #ae1c1c; font-weight: bold"> Détail du compte N°: {{m.numCompte  }} </h3></center>
+    <br><br>
+<table >
+<form method="post" style="text-align: center" class="detail">
+   
+    <tr>
+        <td style="font-weight: bold">RIB:</td>
+
+        <td> {{ m.rib }}</td>
+    <tr>
+        <td style="font-weight: bold"> IBAN :</td>
+        <td> {{ m.iban }}</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold"> Type de compte :</td>
+        <td> {{ m.typeCompte }}</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold"> Solde actuel :</td>
+        <td> {{ m.soldeActuel }}</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold"> Solde réservé :</td>
+        <td> {{ m.soldeReserve }}</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold"> Solde veille :</td>
+        <td> {{ m.soldeVeille }}</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold"> Taux d'interêt créditeur :</td>
+        <td> 5.44% :</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold"> Intérêts créditeurs :</td>
+        <td> {{ m.interetCrediteur }}</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold"> Devise du compte :</td>
+        <td> {{ m.deviseCompte }}</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold"> Solde disponible :</td>
+        <td> {{ m.soldeDisponible }}</td>  </tr>
+    <tr>
+        <td style="font-weight: bold"> Solde soumis à l'intérêt :</td>
+        <td> {{ m.soldeSoumis }}</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold"> Taux d'intérêt débiteur :</td>
+        <td> 6.422%:</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold"> Intérêts débiteurs :</td>
+        <td> {{ m.interetDebiteur }}</td>
+    </tr>
+    <tr>
+        <td style="font-weight: bold"> Date d'ouverture  :</td>
+        <td> {{ m.dateOuverture }}</td>
+    </tr>
+</form>
+
+
+</table>
+
+
+    <br><br>
+
 
 {% endblock %}

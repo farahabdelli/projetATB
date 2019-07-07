@@ -2,8 +2,7 @@
 {% block content %}
 <br><br>
 
-  <br><br><br>
-    <h3> Mes comptes </h3>
+    <h3><a href="{{ path('afficherCompte') }}"> Mes comptes</a> </h3>
     <br><br>
     <table class="table table-striped table-hover ">
         <thead>
@@ -23,7 +22,7 @@
         {% for i in em %}
             <tr>
 
-                <td>{{ i.numCompte }} </td>
+                <td><a href="{{ absolute_url(asset('')) }}app_dev.php/atb/afficherDetail/{{ i.numCompte }}"  >{{ i.numCompte }}</a> </td>
                 <td>{{ i.typeCompte }}  </td>
                 <td>{{ i.deviseCompte }}</td>
                 <td>{{ i.soldeActuel }}</td>
@@ -35,6 +34,38 @@
         {% endfor %}
         </tbody>
     </table>
+
+    <br><br><br>
+
+    <h3><a href="{{ path('afficherCompte') }}"> Mes cartes</a> </h3>
+    <br><br>
+    <table class="table table-striped table-hover ">
+        <thead>
+        <tr>
+
+            <th>N° carte</th>
+            <th>Nom de carte</th>
+            <th>Date</th>
+
+
+        </tr>
+        </thead>
+        <tbody>
+
+        {% for i in em %}
+            <tr>
+
+                <td></td>
+
+
+
+
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <br><br>
 
 
 {% endblock %}

@@ -386,6 +386,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   display: flex;
   align-items: center;
   height: 100%;
+  margin-left: 15%;
 }
 
 .main-menu {
@@ -880,7 +881,6 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
-  -moz-transition: all 0.34;  
   transition: all 0.4s;
 
   box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.18);
@@ -937,7 +937,6 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
-  -moz-transition: all 0.34;  
   transition: all 0.4s;
 }
 
@@ -976,7 +975,6 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
-  -moz-transition: all 0.34;  
   transition: all 0.4s;
 
   box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.18);
@@ -1034,7 +1032,23 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 img{
 	position: relative;
-	top: 40px;
+	top: 70px;
+}
+
+a {
+  color: #ae1c1c;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  font-size: larger;
+}
+
+.detail {
+  font-family:Georgia;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 4.5;
+  color: #212529;
 }
 
 .header-cart-item-img::after {
@@ -1580,11 +1594,7 @@ img{
   transition: all 0.4s;
 }
 
-button.mfp-arrow-right {
-  background-image: url(../images/icons/icon-next.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
+
 
 button.mfp-arrow-left {
   background-image: url(../images/icons/icon-prev.png);
@@ -1753,6 +1763,9 @@ button.mfp-close {
   box-sizing: border-box;
 
 }
+table{
+  background-color: #D3D3D3;
+}
 
 form{
 	background-color: #D3D3D3;
@@ -1760,6 +1773,7 @@ form{
 
 body{
 	background-color: #D3D3D3;
+  line-height: 2.4;
 }
 
 input[type=submit] {
@@ -1783,7 +1797,7 @@ width: 100%;
 padding-right: 0;
 padding-left: 0;
 margin-right: auto;
-margin-left: auto
+margin-left: auto;
 margin:80px;
 }
 

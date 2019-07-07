@@ -115,9 +115,9 @@ class Accounts
     /**
      * @var string
      *
-     * @ORM\Column(name="taux_interet", type="string", length=255, nullable=false)
+     * @ORM\Column(name="date_ouverture", type="string", length=255, nullable=false)
      */
-    private $tauxInteret;
+    private $dateOuverture;
 
     /**
      * @var string
@@ -170,11 +170,11 @@ class Accounts
      * @param $idClient
      * @param string $iban
      * @param string $interetCrediteur
-     * @param string $tauxInteret
+     * @param string $dateOuverture
      * @param string $soldeSoumis
      * @param string $interetDebiteur
      */
-    public function Accounts($numCompte, $nomCompte, $rib, $typeCompte, $solde, $soldeActuel, $soldeDisponible, $soldeReserve, $soldeVeille, $soldeActueltnd, $deviseCompte, $idClient, $iban, $interetCrediteur, $tauxInteret, $soldeSoumis, $interetDebiteur)
+    public function Accounts($numCompte, $nomCompte, $rib, $typeCompte, $solde, $soldeActuel, $soldeDisponible, $soldeReserve, $soldeVeille, $soldeActueltnd, $deviseCompte, $idClient, $iban, $interetCrediteur, $dateOuverture, $soldeSoumis, $interetDebiteur)
     {
         $this->numCompte = $numCompte;
         $this->nomCompte = $nomCompte;
@@ -190,7 +190,7 @@ class Accounts
         $this->idClient = $idClient;
         $this->iban = $iban;
         $this->interetCrediteur = $interetCrediteur;
-        $this->tauxInteret = $tauxInteret;
+        $this->$dateOuverture = $dateOuverture;
         $this->soldeSoumis = $soldeSoumis;
         $this->interetDebiteur = $interetDebiteur;
     }
@@ -422,17 +422,17 @@ class Accounts
     /**
      * @return string
      */
-    public function getTauxInteret()
+    public function getDateOuverture()
     {
-        return $this->tauxInteret;
+        return $this->dateOuverture;
     }
 
     /**
-     * @param string $tauxInteret
+     * @param string $dateOuverture
      */
-    public function setTauxInteret($tauxInteret)
+    public function setDateOuverture($dateOuverture)
     {
-        $this->tauxInteret = $tauxInteret;
+        $this->dateOuverture = $dateOuverture;
     }
 
     /**

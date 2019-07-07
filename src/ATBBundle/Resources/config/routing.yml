@@ -4,7 +4,7 @@ atb_homepage:
 
 accueil:
     path:     /accueil
-    defaults: { _controller: ATBBundle:Accueil:index }
+    defaults: { _controller: ATBBundle:Accueil:afficherAccueil }
 
 
 compte:
@@ -28,3 +28,7 @@ afficherCompte:
 afficherAccueil:
     path:     /afficherAccueil
     defaults: { _controller: ATBBundle:Accueil:afficherAccueil }
+
+afficherDetail:
+    path:     /afficherDetail/{numCompte}
+    defaults: { _controller: ATBBundle:Detail:afficherDetail }
