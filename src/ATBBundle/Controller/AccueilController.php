@@ -14,11 +14,15 @@ class AccueilController extends Controller
     }
 
 
-    public function afficherAccueilAction( )
+    public function afficherAccueilAction()
     {
-        $em=$this->getDoctrine()->getManager();
-        $modeles=$em->getRepository('ATBBundle:Accounts')->afficherCompteDQL($this->getUser());
+        $em = $this->getDoctrine()->getManager();
+        $modeles = $em->getRepository('ATBBundle:Accounts')->afficherCompteDQL($this->getUser());
 
-        return $this->render('@ATB/atbviews/accueil.html.twig',array('em'=>$modeles));
+        $fm=$this->getDoctrine()->getManager();
+        $modele=$fm->getRepository('ATBBundle:Cards')->findAll();
+
+        return $this->render('@ATB/atbviews/accueil.html.twig', array('em' => $modeles,'m'=>$modele));
     }
+
 }

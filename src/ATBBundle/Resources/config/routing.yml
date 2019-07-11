@@ -32,3 +32,43 @@ afficherAccueil:
 afficherDetail:
     path:     /afficherDetail/{numCompte}
     defaults: { _controller: ATBBundle:Detail:afficherDetail }
+
+afficherDetail2:
+    path:     /afficherDetail2
+    defaults: { _controller: ATBBundle:Detail:afficherDetail2 }
+
+afficherDetail3:
+    path:     /afficherDetail3/{numCompte}
+    defaults: { _controller: ATBBundle:Detail:afficherDetail3 }
+
+afficherHistorique:
+    path:     /afficherHistorique
+    defaults: { _controller: ATBBundle:Historique:afficherHistorique }
+
+afficherHistoriquecredit:
+    path:     /afficherHistoriquecredit/{numCompte}/{typeTransaction}
+    defaults: { _controller: ATBBundle:Historique:afficherHistoriquecredit }
+
+afficherHistoriquedebit:
+    path:     /afficherHistoriquedebit/{numCompte}/{typeTransaction}
+    defaults: { _controller: ATBBundle:Historique:afficherHistoriquedebit }
+
+afficherHistoriquedebit2:
+    path:     /afficherHistoriquedebit2/{numCompte}
+    defaults: { _controller: ATBBundle:Historique:afficherHistoriquedebit2 }
+afficherHistoriquedate1:
+    path:     /afficherHistoriquedate1/{numCompte}/{dateTransaction}
+    defaults: { _controller: ATBBundle:Historique:afficherHistoriquedate1 }
+
+afficherHistoriquedate2:
+    path:     /afficherHistoriquedate2/{numCompte}/{typeTransaction}/{dateTransaction}
+    defaults: { _controller: ATBBundle:Historique:afficherHistoriquedate2 }
+
+afficherHistoriquedate3:
+    path:     /afficherHistoriquedate3/{numCompte}/{typeTransaction}/{dateTransaction}
+    defaults: { _controller: ATBBundle:Historique:afficherHistoriquedate3 }
+
+
+afficherCarte:
+    path:     /afficherCarte
+    defaults: { _controller: ATBBundle:Carte:afficherCarte }

@@ -48,19 +48,6 @@
 {% block header %}
     <!-- Header -->
     <header>
-        <!-- Header desktop -->
-      <!--  <div class="container-menu-desktop">
-            <!-- Topbar --
-
-
-
-            <div class="top-bar"></div>
-        </div>-->
-
-
-
-
-
 
                 <!-- Header desktop -->
 
@@ -102,8 +89,10 @@
                                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                                         <a class="dropdown-item" href="{{ path('afficherCompte') }}">Mes comptes</a>
                                                         <div class="dropdown-divider"></div>
-                                                        <a class="dropdown-item" href="{ path('afficherHistorique') }}">Historique</a>
+                                                        <a class="dropdown-item" href="{{  path('afficherDetail2') }}">Détails</a>
                                                         <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="{{  path('afficherHistorique') }}">Historique</a>
+
 
                                                     </div>
                                                 </li>
@@ -131,6 +120,18 @@
                                         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                             <span class="navbar-toggler-icon"></span>
                                         </button>
+                                        <a class="navbar-brand" href="{{ path('afficherAccueil') }}">      </a>
+                                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="{{ path('afficherAccueil') }}">        </a>
+                                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="{{ path('afficherAccueil') }}">          </a>
+                                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
 
                                     </nav>
                                 </div>
@@ -152,7 +153,7 @@
                             </nav>
                         </div>
 
-                        <br><br><br><br>
+                        <br>
 
                     </div>
 
@@ -193,6 +194,26 @@
 				</span>
                     </div>
                 </div>
+
+        <nav class="navbar navbar-default nav-main" role="navigation" id="Navigation">
+            <div class="container container-fluid">
+
+                <div class="container-fluid hidden-xs"><div class="dropdown-back"></div>
+
+                </div>
+            </div>
+        </nav>
+
+        <hr size="15%" color="#ae1c1c">
+        <div >
+
+            <div class="bar"></div>
+            <div  runat="server" ><div class="zone zone-featured">
+                    <article class="widget-featured widget-html-widget widget">
+                        <p><img class="img2" src="{{ asset('images/ahla.png') }}" width="100%" height="auto"></p>
+                    </article></div></div>
+        </div>
+
 
 
                 <!-- Menu Mobile -->
@@ -251,7 +272,7 @@
     <!-- Product -->
     <section class="bg0 p-t-23 p-b-140">
         <div class="container">
-            <br><br><br>
+
 
             <div class="flex-w flex-sb-m p-b-52">
 

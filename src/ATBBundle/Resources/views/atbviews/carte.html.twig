@@ -1,0 +1,50 @@
+{% extends 'base3.html.twig' %}
+{% block content %}
+
+
+    <br>
+
+    <center>
+        <table >
+            <form method="post" style="text-align: center">
+                <tr>
+                    <br><br>
+                    <td style="font-weight: bold"> Numéro de compte: </td>
+
+                    <td >
+                        <select name="list" class="form-control input-focus ">
+                            {% for i in m %}
+                            <option  value="{{ i.numCompte  }}">{{ i.numCompte }}</option>
+                            {% endfor %}
+                        </select></td>
+                    </td>
+
+
+                </tr>
+
+
+
+
+                <tr>
+                    <td> <br></td>
+                    <td><br> </td>
+
+                    <td><br><br><a href="{{ absolute_url(asset('')) }}app_dev.php/atb/afficherCarte2/0532984751364" type="submit" class="btn btn-danger"  >
+
+                       Voir </a>
+                    </td>
+                </tr>
+
+
+
+            </form>
+        </table></center>
+
+
+    <br><br><br><br><br><br><br><br>
+
+
+    <br><br>
+
+
+{% endblock %}
