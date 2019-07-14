@@ -72,3 +72,21 @@ afficherHistoriquedate3:
 afficherCarte:
     path:     /afficherCarte
     defaults: { _controller: ATBBundle:Carte:afficherCarte }
+
+afficherCarte2:
+    path:     /afficherCarte2/{numCompte}
+    defaults: { _controller: ATBBundle:Carte:afficherCarte2 }
+
+afficherCarte3:
+    path:     /afficherCarte3/{numCompte}
+    defaults: { _controller: ATBBundle:Carte:afficherCarte3 }
+
+
+bloquerCarte2:
+  path:     /bloquerCarte2/{numCarte}
+  defaults: { _controller: ATBBundle:Carte:bloquerCarte2 }
+
+
+bloquerCarte3:
+    path:     /bloquerCarte3/{numCarte}
+    defaults: { _controller: ATBBundle:Carte:bloquerCarte3 }

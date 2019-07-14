@@ -12,9 +12,12 @@
                     <td style="font-weight: bold"> Numéro de compte: </td>
 
                     <td >
-                        <select name="list" class="form-control input-focus ">
-                            {% for i in m %}
-                            <option  value="{{ i.numCompte  }}">{{ i.numCompte }}</option>
+                        <select name="list" class="form-control input-focus " style="height: 3%">
+                            <option value="Choisissez votre compte" selected >Choisissez votre compte</option>
+                            {% for i in em %}
+
+                                <option  value="{{ i.numCompte  }}">{{ i.numCompte }}(TND){{ i.typeCompte }}</option>
+
                             {% endfor %}
                         </select></td>
                     </td>

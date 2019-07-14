@@ -15,27 +15,29 @@ class CardsRepository extends \Doctrine\ORM\EntityRepository
 
     public function findcompteDQL(){
         $query=$this->getEntityManager()->createQuery('SELECT t from ATBBundle:Cards t where t.numCompte= ?1');
-        $query->setParameter(1, 'Crédit');
+        $query->setParameter(1, '0532984751364');
         $t= $query->getResult();
         return $t;
 
     }
 
-    public function findbydebitDQL(){
-        $query=$this->getEntityManager()->createQuery('SELECT t from ATBBundle:Transactions t where t.typeTransaction= ?1');
-        $query->setParameter(1, 'Débit');
+    public function findcompte2DQL(){
+        $query=$this->getEntityManager()->createQuery('SELECT t from ATBBundle:Cards t where t.numCompte= ?1');
+        $query->setParameter(1, '0235649871524');
         $t= $query->getResult();
         return $t;
 
     }
 
-    public function findbydebit2DQL(){
-        $query=$this->getEntityManager()->createQuery('SELECT t from ATBBundle:Transactions t where t.typeTransaction= ?1');
-        $query->setParameter(1, 'Débit2');
+    public function findcarteDQL(){
+        $query=$this->getEntityManager()->createQuery('SELECT t from ATBBundle:Cards t where t.numCompte= ?1');
+        $query->setParameter(1, '0235649871524');
         $t= $query->getResult();
         return $t;
 
     }
+
+
 
     public function findbydate1DQL(){
         $query=$this->getEntityManager()->createQuery('SELECT t from ATBBundle:Transactions t where t.dateTransaction< ?1 ');
