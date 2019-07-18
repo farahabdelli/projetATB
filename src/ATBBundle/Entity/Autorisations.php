@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Autorisations
  *
  * @ORM\Table(name="autorisations")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="ATBBundle\Repository\AutorisationRepository")
  */
 class Autorisations
 {

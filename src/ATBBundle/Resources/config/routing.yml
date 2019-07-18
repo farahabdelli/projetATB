@@ -90,3 +90,12 @@ bloquerCarte2:
 bloquerCarte3:
     path:     /bloquerCarte3/{numCarte}
     defaults: { _controller: ATBBundle:Carte:bloquerCarte3 }
+
+getcompte:
+    path:     /getcompte
+    defaults: { _controller: ATBBundle:Carte:getcompte }
+
+
+search:
+    path:     /search
+    defaults: { _controller: ATBBundle:Autorisation:search }

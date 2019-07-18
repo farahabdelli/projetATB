@@ -49,7 +49,7 @@ class CarteController extends Controller
         $fm=$this->getDoctrine()->getManager();
         $modele=$fm->getRepository('ATBBundle:Accounts')->findAll();
         $em=$this->getDoctrine()->getManager();
-        $modeles=$em->getRepository('ATBBundle:Cards')->findcompte2DQL();
+        $modeles=$em->getRepository('ATBBundle:Cards')->findcompteDQL();
 
         $cm=$this->getDoctrine()->getManager();
         $card=$cm->getRepository('ATBBundle:Cards')->find($numCarte);
@@ -83,4 +83,19 @@ class CarteController extends Controller
 
 
     }
+
+
+
+
+    public function getcompteAction( )
+    {
+        $fm=$this->getDoctrine()->getManager();
+        $modele=$fm->getRepository('ATBBundle:Accounts')->findAll();
+
+
+
+        return $this->render('@ATB/atbviews/historiqueauto.html.twig',array('m'=>$modele));
+    }
+
+
 }
