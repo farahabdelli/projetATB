@@ -37,7 +37,7 @@ security:
                 provider: fos_userbundle
                 csrf_token_generator: security.csrf.token_manager
                 always_use_default_target_path: true
-                default_target_path: /atb/afficherCompte
+                default_target_path: /atb/afficherAccueil
             logout:
                 path: fos_user_security_logout
             anonymous:    true

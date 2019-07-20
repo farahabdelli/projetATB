@@ -33,7 +33,10 @@ class AutorisationController extends Controller
                 'class' =>'ATBBundle:Cards',
                 'choice_label'=>'numCarte',
                 'multiple'=>false,
-                'label'=>'Numéro de la carte',
+                'label'=>'Numéro de la carte :',
+                'attr' => array('class' => 'form-control input-focus ','style' => 'width: 12%'),
+                'label_attr' => array('style' => 'font-weight: bold'),
+
 
 
             ])
@@ -41,11 +44,17 @@ class AutorisationController extends Controller
             ->add('from', DateType::class, [
                 'widget' => 'choice',
                 'format' => 'yyyy-MM-dd',
+                'label'=>'Du',
+                'attr' => array('class' => 'form-control input-focus ','style' => 'width: 12%'),
+                'label_attr' => array('style' => 'font-weight: bold'),
 
             ])
             ->add('to', DateType::class, [
                 'widget' => 'choice',
                 'format' => 'yyyy-MM-dd',
+                'label'=>'Au',
+                'attr' => array('class' => 'form-control input-focus ','style' => 'width: 12%'),
+                'label_attr' => array('style' => 'font-weight: bold'),
 
                 ])
             ->add('chercher', SubmitType::class, array('label' => 'Chercher', 'attr' => array('class' => 'btn btn-danger', 'style' => 'margin-top:10px')))

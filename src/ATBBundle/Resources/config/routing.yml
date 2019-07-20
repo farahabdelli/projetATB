@@ -99,3 +99,7 @@ getcompte:
 search:
     path:     /search
     defaults: { _controller: ATBBundle:Autorisation:search }
+
+envoyer:
+    path:     /envoyer
+    defaults: { _controller: ATBBundle:Virement:envoyer }
