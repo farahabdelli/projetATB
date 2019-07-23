@@ -16,6 +16,8 @@ class CompteController extends Controller
         $em=$this->getDoctrine()->getManager();
         $modeles=$em->getRepository('ATBBundle:Accounts')->afficherCompteDQL($this->getUser());
 
+
+
         return $this->render('@ATB/atbviews/compte.html.twig',array('em'=>$modeles));
     }
 }

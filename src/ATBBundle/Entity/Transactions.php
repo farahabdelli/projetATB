@@ -71,8 +71,9 @@ class Transactions
     private $credit;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Accounts")
-     * @ORM\JoinColumn(name="num_compte",referencedColumnName="num_compte")
+     * @var string
+     *
+     * @ORM\Column(name="num_compte", type="string", length=255, nullable=false)
      */
 
     private $numCompte;
@@ -87,7 +88,7 @@ class Transactions
      * @param \DateTime $dateValeur
      * @param string $debit
      * @param string $credit
-     * @param $numCompte
+     * @param string $numCompte
      */
     public function Transactions($id, $typeTransaction, \DateTime $dateTransaction, $montant, $intitule, \DateTime $dateValeur, $debit, $credit, $numCompte)
     {
@@ -231,7 +232,7 @@ class Transactions
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getNumCompte()
     {
@@ -239,7 +240,7 @@ class Transactions
     }
 
     /**
-     * @param mixed $numCompte
+     * @param string $numCompte
      */
     public function setNumCompte($numCompte)
     {

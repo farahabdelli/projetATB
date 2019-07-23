@@ -44,23 +44,23 @@ class Accounts
     private $typeCompte;
 
     /**
-     * @var string
+     * @var float
      *
-     * @ORM\Column(name="solde", type="string", length=255, nullable=false)
+     * @ORM\Column(name="solde", type="float", length=255, nullable=false)
      */
     private $solde;
 
     /**
-     * @var string
+     * @var float
      *
-     * @ORM\Column(name="solde_actuel", type="string", length=255, nullable=false)
+     * @ORM\Column(name="solde_actuel", type="float", length=255, nullable=false)
      */
     private $soldeActuel;
 
     /**
-     * @var string
+     * @var float
      *
-     * @ORM\Column(name="solde_disponible", type="string", length=255, nullable=false)
+     * @ORM\Column(name="solde_disponible", type="float", length=255, nullable=false)
      */
     private $soldeDisponible;
 
@@ -120,9 +120,9 @@ class Accounts
     private $dateOuverture;
 
     /**
-     * @var string
+     * @var float
      *
-     * @ORM\Column(name="solde_soumis", type="string", length=255, nullable=false)
+     * @ORM\Column(name="solde_soumis", type="float", length=255, nullable=false)
      */
     private $soldeSoumis;
 
@@ -137,8 +137,8 @@ class Accounts
      * Accounts constructor.
      * @param string $numCompte
      * @param string $typeCompte
-     * @param string $soldeActuel
-     * @param string $soldeDisponible
+     * @param float $soldeActuel
+     * @param float $soldeDisponible
      * @param string $soldeActueltnd
      * @param string $deviseCompte
      * @param $idClient
@@ -160,9 +160,9 @@ class Accounts
      * @param string $nomCompte
      * @param string $rib
      * @param string $typeCompte
-     * @param string $solde
-     * @param string $soldeActuel
-     * @param string $soldeDisponible
+     * @param float $solde
+     * @param float $soldeActuel
+     * @param float $soldeDisponible
      * @param string $soldeReserve
      * @param string $soldeVeille
      * @param string $soldeActueltnd
@@ -171,7 +171,7 @@ class Accounts
      * @param string $iban
      * @param string $interetCrediteur
      * @param string $dateOuverture
-     * @param string $soldeSoumis
+     * @param float $soldeSoumis
      * @param string $interetDebiteur
      */
     public function Accounts($numCompte, $nomCompte, $rib, $typeCompte, $solde, $soldeActuel, $soldeDisponible, $soldeReserve, $soldeVeille, $soldeActueltnd, $deviseCompte, $idClient, $iban, $interetCrediteur, $dateOuverture, $soldeSoumis, $interetDebiteur)
@@ -260,7 +260,7 @@ class Accounts
     }
 
     /**
-     * @return string
+     * @return float
      */
     public function getSolde()
     {
@@ -268,7 +268,7 @@ class Accounts
     }
 
     /**
-     * @param string $solde
+     * @param float $solde
      */
     public function setSolde($solde)
     {
@@ -276,7 +276,7 @@ class Accounts
     }
 
     /**
-     * @return string
+     * @return float
      */
     public function getSoldeActuel()
     {
@@ -292,7 +292,7 @@ class Accounts
     }
 
     /**
-     * @return string
+     * @return float
      */
     public function getSoldeDisponible()
     {
@@ -300,7 +300,7 @@ class Accounts
     }
 
     /**
-     * @param string $soldeDisponible
+     * @param float $soldeDisponible
      */
     public function setSoldeDisponible($soldeDisponible)
     {
@@ -436,7 +436,7 @@ class Accounts
     }
 
     /**
-     * @return string
+     * @return float
      */
     public function getSoldeSoumis()
     {
@@ -444,7 +444,7 @@ class Accounts
     }
 
     /**
-     * @param string $soldeSoumis
+     * @param float $soldeSoumis
      */
     public function setSoldeSoumis($soldeSoumis)
     {

@@ -36,9 +36,9 @@ class Virements
     private $numCompteB;
 
     /**
-     * @var string
+     * @var float
      *
-     * @ORM\Column(name="montant_virement", type="string", length=255, nullable=false)
+     * @ORM\Column(name="montant_virement", type="float", length=255, nullable=false)
      */
     private $montantVirement;
 
@@ -50,8 +50,9 @@ class Virements
     private $dateVirement;
 
     /**
-     * @ORM\ManyToOne(targetEntity="User")
-     * @ORM\JoinColumn(name="id_client",referencedColumnName="id")
+     * @var integer
+     *
+     * @ORM\Column(name="id_client", type="integer", nullable=false)
      */
     private $idClient;
 
@@ -62,7 +63,7 @@ class Virements
      * @param string $numCompteB
      * @param string $montantVirement
      * @param \DateTime $dateVirement
-     * @param $idClient
+     * @param int $idClient
      */
     public function Virements($id, $numCompteD, $numCompteB, $montantVirement, \DateTime $dateVirement, $idClient)
     {
@@ -123,7 +124,7 @@ class Virements
     }
 
     /**
-     * @return string
+     * @return float
      */
     public function getMontantVirement()
     {
@@ -131,7 +132,7 @@ class Virements
     }
 
     /**
-     * @param string $montantVirement
+     * @param floatX $montantVirement
      */
     public function setMontantVirement($montantVirement)
     {
@@ -155,7 +156,7 @@ class Virements
     }
 
     /**
-     * @return mixed
+     * @return int
      */
     public function getIdClient()
     {
@@ -163,7 +164,7 @@ class Virements
     }
 
     /**
-     * @param mixed $idClient
+     * @param int $idClient
      */
     public function setIdClient($idClient)
     {

@@ -22,16 +22,16 @@
         </thead>
         <tbody>
 
-        {% for i in em %}
+        {% for i in solde %}
             <tr>
 
-                <td><a href="{{ absolute_url(asset('')) }}app_dev.php/atb/afficherDetail/{{ i.numCompte }}" >{{ i.numCompte }}</a></td>
+                <td>{{ i.numCompte }}</td>
 
                 <td>{{ i.typeCompte }}  </td>
                 <td>{{ i.deviseCompte }}</td>
-                <td>{{ i.solde }}</td>
+                <td>{{ i.soldeActuel }}</td>
                 <td>{{ i.soldeDisponible }}</td>
-                <td>{{ i.solde}}TND</td>
+                <td>{{ i.soldeActueltnd }}</td>
 
 
 

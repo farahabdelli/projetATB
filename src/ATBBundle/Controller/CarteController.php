@@ -53,7 +53,6 @@ class CarteController extends Controller
 
         $cm=$this->getDoctrine()->getManager();
         $card=$cm->getRepository('ATBBundle:Cards')->find($numCarte);
-
         $card->setStatut('Bloquée');
 
         $cm->persist($card);
